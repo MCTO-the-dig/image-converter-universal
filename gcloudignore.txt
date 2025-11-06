@@ -1,0 +1,11 @@
+# Node modules and environment
+node_modules
+npm-debug.log
+.env
+readme.md
+
+# Local and OS files
+.DS_Store
+.idea
+.vscode
+.git

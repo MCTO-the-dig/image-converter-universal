@@ -1,0 +1,20 @@
+{
+  "name": "image-converter-universal",
+  "version": "1.0.0",
+  "description": "Universal image converter for AVIF, JPG, and PNG formats using Sharp",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^7.10.0",
+    "express": "^4.19.2",
+    "node-fetch": "^2.7.0",
+    "sharp": "^0.33.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+

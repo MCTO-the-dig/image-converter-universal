@@ -158,7 +158,7 @@ curl -X POST https://<your-service-url>/convert \
 ---
 
 **Engineer:** Adam Malik
-**Coder: ** Adam MAlik + ChatGPT5 with training + Clade Code 
+**Coder: ** @themediacto + ChatGPT5 with training + Claude Code 
 **Project:** [Digitising Events Microservices](https://digitisingevents.com)  
 **Service:** `image-converter-universal`  
 **License:** MIT  

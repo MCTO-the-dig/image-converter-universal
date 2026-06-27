@@ -74,7 +74,7 @@ gcloud run deploy image-converter-universal \
   "format": "jpg",
   "quality": 80,
   "targetWidth": 1200,
-  "bucketName": "images.digitisingevents.com",
+  "bucketName": "your-bucket-name", // you dont need the gs://
   "filePrefix": "youtube-thumbnails",
   "fileName": "example"
 }
@@ -88,7 +88,7 @@ gcloud run deploy image-converter-universal \
 | `format` | string | `avif` | Output format (`avif`, `jpg`, `png`) |
 | `quality` | number | `70` | Compression quality |
 | `targetWidth` | number | `1500` | Resize target width in px |
-| `bucketName` | string | `images.digitisingevents.com` | Target GCS bucket |
+| `bucketName` | string | `your-bucket-name` | Target GCS bucket without the gs:// |
 | `filePrefix` | string | `""` | Optional folder path in bucket |
 | `fileName` | string | derived from URL | Optional file base name |
 
@@ -102,7 +102,7 @@ gcloud run deploy image-converter-universal \
   "converted": "https://storage.googleapis.com/images.digitisingevents.com/youtube-thumbnails/example_1200.jpg",
   "width": 1200,
   "format": "jpg",
-  "bucket": "images.digitisingevents.com"
+  "bucket": "your-bucket-name"
 }
 ```
 
@@ -118,7 +118,7 @@ curl -X POST https://<your-service-url>/convert \
     "imageUrl": "https://storage.googleapis.com/thumbimages/sample.png",
     "format": "png",
     "targetWidth": 800,
-    "bucketName": "thumbimages",
+    "bucketName": "thumb-nail-images",
     "filePrefix": "youtube-thumbnails",
     "fileName": "testImage"
   }'
@@ -158,7 +158,7 @@ curl -X POST https://<your-service-url>/convert \
 ---
 
 **Engineer:** Adam Malik
-**Coder: ** ChatGPT5 with training
+**Coder: ** Adam MAlik + ChatGPT5 with training + Clade Code 
 **Project:** [Digitising Events Microservices](https://digitisingevents.com)  
 **Service:** `image-converter-universal`  
 **License:** MIT  
